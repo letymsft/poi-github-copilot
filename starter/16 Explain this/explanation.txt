@@ -1,0 +1,11 @@
+This C program is a simple implementation of CRUD (Create, Read, Update, Delete) operations on a text file named "crud.txt". The operations are performed based on user input.
+
+dicaprio(): This function is used to create or append data to the file. It opens the file in append mode, takes user input, writes it to the file, and then closes the file.
+
+denzel(): This function is used to read data from the file. It opens the file in read mode, reads the data line by line, prints it, and then closes the file.
+
+hanks(): This function is used to update data in the file. It opens the original file and a temporary file, takes the old and new data from the user, and writes the new data to the temporary file if the old data is found. If the old data is not found, it writes the original data to the temporary file. It then deletes the original file and renames the temporary file.
+
+freeman(): This function is used to delete data from the file. It works similarly to the update function, but instead of replacing the old data with new data, it simply omits the old data when writing to the temporary file.
+
+main(): This function presents a menu to the user to choose an operation. It then calls the appropriate function based on the user's choice. The menu is presented in an infinite loop, which can be exited by choosing the "Exit" option.

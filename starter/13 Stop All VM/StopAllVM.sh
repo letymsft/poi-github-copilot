@@ -1,0 +1,1 @@
+az storage blob upload --account-name mystorageaccount --account-key myaccountkey --container-name mycontainer --name myfile --type block --file ./local/path/to/file

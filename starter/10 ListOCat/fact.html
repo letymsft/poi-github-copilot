@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat Fact</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <h1>Cat Fact</h1>
+    <p id="fact">
+        <!-- The clicked fact will be inserted here -->
+    </p>
+
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const fact = urlParams.get('fact');
+            document.getElementById('fact').textContent = fact;
+        };
+    </script>
+</body>
+</html>
